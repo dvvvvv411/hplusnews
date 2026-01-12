@@ -26,7 +26,7 @@ All colors MUST be HSL.
     --muted: 0 0% 96%;
     --muted-foreground: 0 0% 45%;
 
-    --accent: 0 72% 51%;
+    --accent: 217 71% 45%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
@@ -34,13 +34,13 @@ All colors MUST be HSL.
 
     --border: 0 0% 90%;
     --input: 0 0% 90%;
-    --ring: 0 72% 51%;
+    --ring: 217 71% 45%;
 
     --radius: 0.5rem;
 
     /* News Portal specific colors */
-    --news-red: 0 72% 51%;
-    --news-red-dark: 0 72% 40%;
+    --news-primary: 217 71% 45%;
+    --news-primary-dark: 217 71% 35%;
     --news-yellow: 45 100% 51%;
     --news-green: 142 76% 36%;
     --news-blue: 217 91% 60%;
