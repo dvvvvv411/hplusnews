@@ -254,7 +254,7 @@ const Artikel = () => {
             </div>
             
             {/* Risk Notice */}
-            <p className="text-[7px] text-muted-foreground/60 mt-8 pt-4 border-t border-border/30 text-center">
+            <p className="text-[6px] sm:text-[7px] md:text-[8px] text-muted-foreground/60 mt-8 pt-4 border-t border-border/30 text-center whitespace-nowrap">
               Risikohinweis: Trading birgt Verlustrisiken. Vergangene Gewinne sind keine Garantie für zukünftige Ergebnisse.
             </p>
           </div>
