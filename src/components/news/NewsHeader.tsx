@@ -18,7 +18,11 @@ const NewsHeader = () => {
       {/* Main header with logo */}
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <Link to="/" className="flex items-center gap-2">
+          <Link 
+            to="/" 
+            className="flex items-center gap-2"
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          >
             <div className="bg-accent text-accent-foreground font-black text-3xl px-3 py-1">
               H+
             </div>
