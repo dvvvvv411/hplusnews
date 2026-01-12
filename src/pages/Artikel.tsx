@@ -2,7 +2,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Separator } from "@/components/ui/separator";
-import { Clock, Share2, Bookmark, Volume2, Shield, Users, TrendingUp, Phone, MessageCircle, ChevronRight } from "lucide-react";
+import { Clock, Share2, Bookmark, Volume2, Check, ArrowRight } from "lucide-react";
 import NewsHeader from "@/components/news/NewsHeader";
 import NewsFooter from "@/components/news/NewsFooter";
 import RelatedArticles from "@/components/news/RelatedArticles";
@@ -190,78 +190,75 @@ const Artikel = () => {
 
           <Separator className="my-10" />
 
-          {/* Conversion-optimized CTA Box */}
-          <div className="bg-gradient-to-br from-primary/5 via-background to-accent/10 border-2 border-primary/20 rounded-2xl p-8 my-12 shadow-xl relative overflow-hidden">
-            {/* Background decoration */}
-            <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-bl from-accent/20 to-transparent rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
-            
-            <div className="relative z-10 grid md:grid-cols-2 gap-8">
-              {/* Left Column - Main Content */}
-              <div className="space-y-6">
-                <div>
-                  <h3 className="text-2xl md:text-3xl font-black text-foreground leading-tight mb-4">
-                    VERDIENE BIS ZU 100.000€ PRO MONAT MIT KRYPTO-TRADING
-                  </h3>
-                  <p className="text-muted-foreground text-lg leading-relaxed">
-                    Nutze unsere KI-gestützte Trading-Plattform und profitiere vom Bitcoin-Boom. Keine Vorkenntnisse erforderlich – unser Algorithmus handelt automatisch für dich.
-                  </p>
-                </div>
+          {/* Conversion-Optimized CTA Card */}
+          <div className="my-12 p-8 md:p-10 bg-gradient-to-br from-muted/40 to-muted/20 rounded-2xl border border-border/50">
+            <div className="grid md:grid-cols-2 gap-10">
+              
+              {/* Left Column - Zentriert */}
+              <div className="flex flex-col items-center text-center space-y-6">
+                <h3 className="text-2xl md:text-3xl font-bold text-foreground leading-tight">
+                  Bereit für automatisierte Gewinne?
+                </h3>
+                <p className="text-muted-foreground max-w-sm">
+                  Schließen Sie sich über 15.000 erfolgreichen Tradern an, die bereits von Bitloon profitieren.
+                </p>
                 
-                {/* Trust Badges */}
-                <div className="grid grid-cols-3 gap-3">
-                  <div className="text-center p-3 bg-background/80 rounded-xl border border-border/50">
-                    <Shield className="w-6 h-6 mx-auto mb-2 text-green-600" />
-                    <span className="text-xs font-semibold text-foreground">Reguliert & Sicher</span>
+                {/* Trust Badges - Einheitlich & Dezent */}
+                <div className="flex flex-wrap justify-center gap-3 pt-2">
+                  <div className="flex items-center gap-2 px-3 py-2 rounded-lg bg-background/60 border border-border/40">
+                    <Check className="w-4 h-4 text-muted-foreground" />
+                    <span className="text-sm text-muted-foreground">SSL-verschlüsselt</span>
                   </div>
-                  <div className="text-center p-3 bg-background/80 rounded-xl border border-border/50">
-                    <Users className="w-6 h-6 mx-auto mb-2 text-blue-600" />
-                    <span className="text-xs font-semibold text-foreground">25.000+ Nutzer</span>
+                  <div className="flex items-center gap-2 px-3 py-2 rounded-lg bg-background/60 border border-border/40">
+                    <Check className="w-4 h-4 text-muted-foreground" />
+                    <span className="text-sm text-muted-foreground">15.000+ Nutzer</span>
                   </div>
-                  <div className="text-center p-3 bg-background/80 rounded-xl border border-border/50">
-                    <TrendingUp className="w-6 h-6 mx-auto mb-2 text-accent" />
-                    <div>
-                      <span className="text-lg font-black text-accent">+30.2%</span>
-                      <p className="text-[10px] text-muted-foreground">Ø Profit</p>
-                    </div>
+                  <div className="flex items-center gap-2 px-3 py-2 rounded-lg bg-background/60 border border-border/40">
+                    <Check className="w-4 h-4 text-muted-foreground" />
+                    <span className="text-sm text-muted-foreground">4.8★ Bewertung</span>
                   </div>
                 </div>
               </div>
               
-              {/* Right Column - Premium Service */}
-              <div className="bg-background/90 backdrop-blur-sm rounded-xl p-6 border border-border/50 flex flex-col justify-between">
-                <div>
-                  <span className="inline-block bg-accent/20 text-accent text-xs font-bold px-3 py-1 rounded-full mb-4">
-                    PREMIUM-SERVICE
-                  </span>
-                  
-                  <div className="space-y-4 mb-6">
-                    <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                        <Phone className="w-5 h-5 text-primary" />
-                      </div>
-                      <span className="font-medium text-foreground">Persönlicher Ansprechpartner</span>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                        <MessageCircle className="w-5 h-5 text-primary" />
-                      </div>
-                      <span className="font-medium text-foreground">Kostenlose Beratung durch Finanzexperten</span>
-                    </div>
+              {/* Right Column - Zentriert */}
+              <div className="flex flex-col items-center text-center space-y-5">
+                <Badge className="bg-primary/10 text-primary border-primary/20 px-4 py-1">
+                  Premium Service
+                </Badge>
+                
+                <div className="space-y-3 text-left">
+                  <div className="flex items-center gap-3">
+                    <Check className="w-5 h-5 text-primary flex-shrink-0" />
+                    <span className="text-foreground">Persönlicher Ansprechpartner</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Check className="w-5 h-5 text-primary flex-shrink-0" />
+                    <span className="text-foreground">24/7 Support-Hotline</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Check className="w-5 h-5 text-primary flex-shrink-0" />
+                    <span className="text-foreground">Kostenlose Finanzberatung</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Check className="w-5 h-5 text-primary flex-shrink-0" />
+                    <span className="text-foreground">Keine versteckten Gebühren</span>
                   </div>
                 </div>
                 
-                <Button 
-                  size="lg" 
-                  className="w-full bg-accent hover:bg-accent/90 text-accent-foreground font-bold text-lg py-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02]"
-                >
+                <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground font-bold text-lg px-10 py-6 rounded-xl shadow-lg mt-2">
                   JETZT KOSTENLOS STARTEN
-                  <ChevronRight className="w-5 h-5 ml-2" />
+                  <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
+                
+                <p className="text-xs text-muted-foreground">
+                  Kein Risiko · Jederzeit kündbar
+                </p>
               </div>
+              
             </div>
             
             {/* Risk Notice */}
-            <p className="relative z-10 text-xs text-muted-foreground mt-6 pt-4 border-t border-border/30">
+            <p className="text-xs text-muted-foreground mt-8 pt-4 border-t border-border/30 text-center">
               <strong>Risikohinweis:</strong> Trading birgt Verlustrisiken. Vergangene Gewinne sind keine Garantie für zukünftige Ergebnisse.
             </p>
           </div>
