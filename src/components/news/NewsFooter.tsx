@@ -34,32 +34,6 @@ const NewsFooter = () => {
 
   return (
     <footer className="bg-primary text-primary-foreground mt-16">
-      {/* Newsletter Section */}
-      <div className="bg-accent">
-        <div className="container mx-auto px-4 py-8">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <div>
-              <h3 className="text-xl font-bold text-accent-foreground">
-                Bleiben Sie informiert!
-              </h3>
-              <p className="text-accent-foreground/90">
-                Erhalten Sie die wichtigsten Nachrichten direkt in Ihr Postfach.
-              </p>
-            </div>
-            <div className="flex gap-2 w-full md:w-auto">
-              <Input
-                type="email"
-                placeholder="Ihre E-Mail-Adresse"
-                className="bg-background text-foreground max-w-xs"
-              />
-              <Button variant="secondary" className="font-bold">
-                <Mail className="w-4 h-4 mr-2" />
-                Abonnieren
-              </Button>
-            </div>
-          </div>
-        </div>
-      </div>
 
       {/* Main Footer */}
       <div className="container mx-auto px-4 py-12">

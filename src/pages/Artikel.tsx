@@ -260,8 +260,6 @@ const Artikel = () => {
           </div>
         </article>
 
-        {/* Related Articles */}
-        <RelatedArticles />
       </main>
 
       <NewsFooter />
