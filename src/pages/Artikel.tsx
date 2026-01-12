@@ -196,19 +196,15 @@ const Artikel = () => {
               
               {/* Left Column - Zentriert */}
               <div className="flex flex-col items-center text-center space-y-6">
-                <h3 className="text-2xl md:text-3xl font-bold text-foreground leading-tight">
-                  Bereit für automatisierte Gewinne?
-                </h3>
+              <h3 className="text-2xl md:text-3xl font-bold text-foreground leading-tight">
+                Verdiene bis zu 100.000€ pro Monat mit Krypto-Trading
+              </h3>
                 <p className="text-muted-foreground max-w-sm">
                   Schließen Sie sich über 15.000 erfolgreichen Tradern an, die bereits von Bitloon profitieren.
                 </p>
                 
                 {/* Trust Badges - Einheitlich & Dezent */}
                 <div className="flex flex-wrap justify-center gap-3 pt-2">
-                  <div className="flex items-center gap-2 px-3 py-2 rounded-lg bg-background/60 border border-border/40">
-                    <Check className="w-4 h-4 text-muted-foreground" />
-                    <span className="text-sm text-muted-foreground">SSL-verschlüsselt</span>
-                  </div>
                   <div className="flex items-center gap-2 px-3 py-2 rounded-lg bg-background/60 border border-border/40">
                     <Check className="w-4 h-4 text-muted-foreground" />
                     <span className="text-sm text-muted-foreground">15.000+ Nutzer</span>
@@ -258,8 +254,8 @@ const Artikel = () => {
             </div>
             
             {/* Risk Notice */}
-            <p className="text-xs text-muted-foreground mt-8 pt-4 border-t border-border/30 text-center">
-              <strong>Risikohinweis:</strong> Trading birgt Verlustrisiken. Vergangene Gewinne sind keine Garantie für zukünftige Ergebnisse.
+            <p className="text-[10px] text-muted-foreground/60 mt-8 pt-4 border-t border-border/30 text-center">
+              Risikohinweis: Trading birgt Verlustrisiken. Vergangene Gewinne sind keine Garantie für zukünftige Ergebnisse.
             </p>
           </div>
         </article>
