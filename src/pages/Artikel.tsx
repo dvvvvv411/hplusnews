@@ -10,6 +10,13 @@ import authorImage from "@/assets/author-felix-stippler.jpg";
 import heroImage from "@/assets/bitloon-trading-hero.jpg";
 
 const Artikel = () => {
+  const today = new Date();
+  const formattedDate = today.toLocaleDateString('de-DE', {
+    day: '2-digit',
+    month: '2-digit',
+    year: 'numeric'
+  });
+
   return (
     <div className="min-h-screen bg-background">
       <NewsHeader />
@@ -55,7 +62,7 @@ const Artikel = () => {
           <Separator orientation="vertical" className="hidden sm:block h-10" />
           
           <div className="flex items-center gap-4 text-sm text-muted-foreground">
-            <span>12.01.2026</span>
+            <span>{formattedDate}</span>
             <span className="flex items-center gap-1">
               <Clock className="w-4 h-4" />
               8 Min. Lesezeit

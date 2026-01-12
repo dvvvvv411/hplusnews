@@ -15,25 +15,6 @@ const NewsHeader = () => {
 
   return (
     <header className="sticky top-0 z-50 bg-background border-b border-border">
-      {/* Top bar with branding */}
-      <div className="bg-primary text-primary-foreground">
-        <div className="container mx-auto px-4 py-2 flex items-center justify-between">
-          <div className="flex items-center gap-4">
-            <span className="text-sm">12. Januar 2026</span>
-            <span className="text-sm hidden md:inline">| Hamburg, 4°C</span>
-          </div>
-          <div className="flex items-center gap-4">
-            <Button variant="ghost" size="sm" className="text-primary-foreground hover:bg-primary/80">
-              <User className="w-4 h-4 mr-2" />
-              <span className="hidden sm:inline">Anmelden</span>
-            </Button>
-            <Button size="sm" className="bg-accent hover:bg-accent/90 text-accent-foreground font-bold">
-              H+ Premium
-            </Button>
-          </div>
-        </div>
-      </div>
-
       {/* Main header with logo */}
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
@@ -45,6 +26,13 @@ const NewsHeader = () => {
           </Link>
           
           <div className="flex items-center gap-2">
+            <Button variant="ghost" size="sm">
+              <User className="w-4 h-4 mr-2" />
+              <span className="hidden sm:inline">Anmelden</span>
+            </Button>
+            <Button size="sm" className="bg-accent hover:bg-accent/90 text-accent-foreground font-bold">
+              H+ Premium
+            </Button>
             <Button variant="ghost" size="icon">
               <Search className="w-5 h-5" />
             </Button>
