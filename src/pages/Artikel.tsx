@@ -2,7 +2,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Separator } from "@/components/ui/separator";
-import { Clock, Share2, Bookmark, Volume2, ExternalLink } from "lucide-react";
+import { Clock, Share2, Bookmark, Volume2, Shield, Users, TrendingUp, Phone, MessageCircle, ChevronRight } from "lucide-react";
 import NewsHeader from "@/components/news/NewsHeader";
 import NewsFooter from "@/components/news/NewsFooter";
 import RelatedArticles from "@/components/news/RelatedArticles";
@@ -190,30 +190,81 @@ const Artikel = () => {
 
           <Separator className="my-10" />
 
-          {/* CTA Section - Dezent */}
-          <div className="my-10 p-6 border border-border rounded-lg bg-muted/20">
-            <h3 className="text-xl font-semibold mb-3">Interesse an Bitloon?</h3>
+          {/* Conversion-optimized CTA Box */}
+          <div className="bg-gradient-to-br from-primary/5 via-background to-accent/10 border-2 border-primary/20 rounded-2xl p-8 my-12 shadow-xl relative overflow-hidden">
+            {/* Background decoration */}
+            <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-bl from-accent/20 to-transparent rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
             
-            <p className="text-muted-foreground mb-4">
-              Der Trading-Bot ist aktuell nur limitiert verfügbar. Wer sich rechtzeitig informiert, kann eine Lizenz erwerben, den Bot selbst einrichten und auf dem eigenen Börsenkonto laufen lassen – komplett eigenständig, mit vollem Kapitalzugriff.
+            <div className="relative z-10 grid md:grid-cols-2 gap-8">
+              {/* Left Column - Main Content */}
+              <div className="space-y-6">
+                <div>
+                  <h3 className="text-2xl md:text-3xl font-black text-foreground leading-tight mb-4">
+                    VERDIENE BIS ZU 100.000€ PRO MONAT MIT KRYPTO-TRADING
+                  </h3>
+                  <p className="text-muted-foreground text-lg leading-relaxed">
+                    Nutze unsere KI-gestützte Trading-Plattform und profitiere vom Bitcoin-Boom. Keine Vorkenntnisse erforderlich – unser Algorithmus handelt automatisch für dich.
+                  </p>
+                </div>
+                
+                {/* Trust Badges */}
+                <div className="grid grid-cols-3 gap-3">
+                  <div className="text-center p-3 bg-background/80 rounded-xl border border-border/50">
+                    <Shield className="w-6 h-6 mx-auto mb-2 text-green-600" />
+                    <span className="text-xs font-semibold text-foreground">Reguliert & Sicher</span>
+                  </div>
+                  <div className="text-center p-3 bg-background/80 rounded-xl border border-border/50">
+                    <Users className="w-6 h-6 mx-auto mb-2 text-blue-600" />
+                    <span className="text-xs font-semibold text-foreground">25.000+ Nutzer</span>
+                  </div>
+                  <div className="text-center p-3 bg-background/80 rounded-xl border border-border/50">
+                    <TrendingUp className="w-6 h-6 mx-auto mb-2 text-accent" />
+                    <div>
+                      <span className="text-lg font-black text-accent">+30.2%</span>
+                      <p className="text-[10px] text-muted-foreground">Ø Profit</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Right Column - Premium Service */}
+              <div className="bg-background/90 backdrop-blur-sm rounded-xl p-6 border border-border/50 flex flex-col justify-between">
+                <div>
+                  <span className="inline-block bg-accent/20 text-accent text-xs font-bold px-3 py-1 rounded-full mb-4">
+                    PREMIUM-SERVICE
+                  </span>
+                  
+                  <div className="space-y-4 mb-6">
+                    <div className="flex items-center gap-3">
+                      <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                        <Phone className="w-5 h-5 text-primary" />
+                      </div>
+                      <span className="font-medium text-foreground">Persönlicher Ansprechpartner</span>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                        <MessageCircle className="w-5 h-5 text-primary" />
+                      </div>
+                      <span className="font-medium text-foreground">Kostenlose Beratung durch Finanzexperten</span>
+                    </div>
+                  </div>
+                </div>
+                
+                <Button 
+                  size="lg" 
+                  className="w-full bg-accent hover:bg-accent/90 text-accent-foreground font-bold text-lg py-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02]"
+                >
+                  JETZT KOSTENLOS STARTEN
+                  <ChevronRight className="w-5 h-5 ml-2" />
+                </Button>
+              </div>
+            </div>
+            
+            {/* Risk Notice */}
+            <p className="relative z-10 text-xs text-muted-foreground mt-6 pt-4 border-t border-border/30">
+              <strong>Risikohinweis:</strong> Trading birgt Verlustrisiken. Vergangene Gewinne sind keine Garantie für zukünftige Ergebnisse.
             </p>
-            
-            <p className="text-sm text-muted-foreground mb-4">
-              Für Leser dieses Artikels: Mit dem Code <strong>FINANCE</strong> erhalten Sie bei der Registrierung 50 € Startguthaben.
-            </p>
-            
-            <Button variant="outline" asChild>
-              <a href="https://bitloon.io" target="_blank" rel="noopener noreferrer">
-                <ExternalLink className="w-4 h-4 mr-2" />
-                Mehr erfahren auf bitloon.io
-              </a>
-            </Button>
           </div>
-
-          {/* Disclaimer */}
-          <p className="text-sm text-muted-foreground italic mt-8">
-            Hinweis: Dieser Artikel enthält werbliche Inhalte. Investitionen in Kryptowährungen sind mit Risiken verbunden. Handeln Sie verantwortungsvoll und investieren Sie nur Kapital, dessen Verlust Sie verkraften können.
-          </p>
         </article>
 
         {/* Related Articles */}
