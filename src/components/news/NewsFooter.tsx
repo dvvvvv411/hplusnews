@@ -7,7 +7,11 @@ const NewsFooter = () => {
         <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
           {/* Links: Logo und Tagline */}
           <div className="flex flex-col items-center lg:items-start gap-1">
-            <Link to="/" className="flex items-center gap-2">
+            <Link 
+              to="/" 
+              className="flex items-center gap-2"
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            >
               <div className="bg-accent text-accent-foreground font-black text-2xl px-3 py-1">
                 H+
               </div>
