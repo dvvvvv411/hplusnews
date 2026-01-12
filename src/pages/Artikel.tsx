@@ -191,83 +191,72 @@ const Artikel = () => {
           <Separator className="my-10" />
 
           {/* Conversion-Optimized CTA Card */}
-          <div className="my-12 p-8 md:p-10 bg-gradient-to-br from-accent via-accent/90 to-blue-700 rounded-2xl border border-white/20 shadow-2xl relative overflow-hidden">
-            {/* Decorative Bubbles */}
-            <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
-            <div className="absolute bottom-0 left-0 w-48 h-48 bg-blue-400/20 rounded-full blur-2xl translate-y-1/2 -translate-x-1/4" />
-            <div className="absolute top-1/2 left-1/3 w-32 h-32 bg-white/5 rounded-full blur-xl" />
-            
-            {/* Shimmer Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent opacity-60 pointer-events-none" />
-            
-            {/* Content */}
-            <div className="relative z-10">
-              <div className="grid md:grid-cols-2 gap-10">
+          <div className="my-12 p-8 md:p-10 bg-gradient-to-br from-muted/40 to-muted/20 rounded-2xl border border-border/50">
+            <div className="grid md:grid-cols-2 gap-10">
+              
+              {/* Left Column - Zentriert */}
+              <div className="flex flex-col items-center text-center space-y-6">
+              <h3 className="text-2xl md:text-3xl font-bold text-foreground leading-tight">
+                Verdiene bis zu 100.000€ pro Monat mit Krypto-Trading
+              </h3>
+                <p className="text-muted-foreground max-w-sm">
+                  Schließen Sie sich über 15.000 erfolgreichen Tradern an, die bereits von Bitloon profitieren.
+                </p>
                 
-                {/* Left Column - Zentriert */}
-                <div className="flex flex-col items-center text-center space-y-6">
-                  <h3 className="text-2xl md:text-3xl font-bold text-white leading-tight">
-                    Verdiene bis zu 100.000€ pro Monat mit Krypto-Trading
-                  </h3>
-                  <p className="text-white/80 max-w-sm">
-                    Schließen Sie sich über 15.000 erfolgreichen Tradern an, die bereits von Bitloon profitieren.
-                  </p>
-                  
-                  {/* Trust Badges - Einheitlich & Dezent */}
-                  <div className="flex flex-wrap justify-center gap-3 pt-2">
-                    <div className="flex items-center gap-2 px-3 py-2 rounded-lg bg-white/15 border border-white/25">
-                      <Check className="w-4 h-4 text-yellow-400" />
-                      <span className="text-sm text-white/90">15.000+ Nutzer</span>
-                    </div>
-                    <div className="flex items-center gap-2 px-3 py-2 rounded-lg bg-white/15 border border-white/25">
-                      <Check className="w-4 h-4 text-yellow-400" />
-                      <span className="text-sm text-white/90">4.8★ Bewertung</span>
-                    </div>
+                {/* Trust Badges - Einheitlich & Dezent */}
+                <div className="flex flex-wrap justify-center gap-3 pt-2">
+                  <div className="flex items-center gap-2 px-3 py-2 rounded-lg bg-background/60 border border-border/40">
+                    <Check className="w-4 h-4 text-muted-foreground" />
+                    <span className="text-sm text-muted-foreground">15.000+ Nutzer</span>
+                  </div>
+                  <div className="flex items-center gap-2 px-3 py-2 rounded-lg bg-background/60 border border-border/40">
+                    <Check className="w-4 h-4 text-muted-foreground" />
+                    <span className="text-sm text-muted-foreground">4.8★ Bewertung</span>
                   </div>
                 </div>
-                
-                {/* Right Column - Zentriert */}
-                <div className="flex flex-col items-center text-center space-y-5">
-                  <Badge className="bg-white/20 text-white border-white/30 px-4 py-1">
-                    Premium Service
-                  </Badge>
-                  
-                  <div className="space-y-3 text-left">
-                    <div className="flex items-center gap-3">
-                      <Check className="w-5 h-5 text-yellow-400 flex-shrink-0" />
-                      <span className="text-white">Persönlicher Ansprechpartner</span>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <Check className="w-5 h-5 text-yellow-400 flex-shrink-0" />
-                      <span className="text-white">24/7 Support-Hotline</span>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <Check className="w-5 h-5 text-yellow-400 flex-shrink-0" />
-                      <span className="text-white">Kostenlose Finanzberatung</span>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <Check className="w-5 h-5 text-yellow-400 flex-shrink-0" />
-                      <span className="text-white">Keine versteckten Gebühren</span>
-                    </div>
-                  </div>
-                  
-                  <Button size="lg" className="bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 text-white font-bold text-lg px-10 py-6 rounded-xl shadow-lg shadow-orange-500/30 mt-2 transition-all duration-300 hover:scale-105">
-                    JETZT KOSTENLOS STARTEN
-                    <ArrowRight className="ml-2 w-5 h-5" />
-                  </Button>
-                  
-                  <p className="text-sm text-white/70">
-                    Kein Risiko · Jederzeit kündbar
-                  </p>
-                </div>
-                
               </div>
               
-              {/* Risk Notice */}
-              <p className="text-[10px] text-white/60 mt-8 pt-4 border-t border-white/20 text-center">
-                Risikohinweis: Trading birgt Verlustrisiken. Vergangene Gewinne sind keine Garantie für zukünftige Ergebnisse.
-              </p>
+              {/* Right Column - Zentriert */}
+              <div className="flex flex-col items-center text-center space-y-5">
+                <Badge className="bg-primary/10 text-primary border-primary/20 px-4 py-1">
+                  Premium Service
+                </Badge>
+                
+                <div className="space-y-3 text-left">
+                  <div className="flex items-center gap-3">
+                    <Check className="w-5 h-5 text-primary flex-shrink-0" />
+                    <span className="text-foreground">Persönlicher Ansprechpartner</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Check className="w-5 h-5 text-primary flex-shrink-0" />
+                    <span className="text-foreground">24/7 Support-Hotline</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Check className="w-5 h-5 text-primary flex-shrink-0" />
+                    <span className="text-foreground">Kostenlose Finanzberatung</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Check className="w-5 h-5 text-primary flex-shrink-0" />
+                    <span className="text-foreground">Keine versteckten Gebühren</span>
+                  </div>
+                </div>
+                
+                <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground font-bold text-lg px-10 py-6 rounded-xl shadow-lg mt-2">
+                  JETZT KOSTENLOS STARTEN
+                  <ArrowRight className="ml-2 w-5 h-5" />
+                </Button>
+                
+                <p className="text-xs text-muted-foreground">
+                  Kein Risiko · Jederzeit kündbar
+                </p>
+              </div>
+              
             </div>
+            
+            {/* Risk Notice */}
+            <p className="text-[10px] text-muted-foreground/60 mt-8 pt-4 border-t border-border/30 text-center">
+              Risikohinweis: Trading birgt Verlustrisiken. Vergangene Gewinne sind keine Garantie für zukünftige Ergebnisse.
+            </p>
           </div>
         </article>
 
