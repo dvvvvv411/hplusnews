@@ -43,7 +43,7 @@ const Artikel = () => {
 
         {/* Subheadline */}
         <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed mb-8">
-          Der autonome Trading-Bot Bitloon revolutioniert das Krypto-Trading durch vollautomatische Handelsentscheidungen.
+          Der autonome Trading-Bot TradeFlare revolutioniert das Krypto-Trading durch vollautomatische Handelsentscheidungen.
         </p>
 
         {/* Author & Meta */}
@@ -88,11 +88,11 @@ const Artikel = () => {
         <figure className="mb-10">
           <img
             src={heroImage}
-            alt="Bitloon Trading Setup"
+            alt="TradeFlare Trading Setup"
             className="w-full rounded-lg shadow-lg"
           />
           <figcaption className="text-sm text-muted-foreground mt-3 italic">
-            Bitloon: Autonomer Trading-Bot für vollautomatisierten Krypto-Handel.
+            TradeFlare: Autonomer Trading-Bot für vollautomatisierten Krypto-Handel.
           </figcaption>
         </figure>
 
@@ -101,7 +101,7 @@ const Artikel = () => {
           <h2>Rechnen statt Raten: Der neue Weg, im Krypto-Markt Geld zu verdienen</h2>
           
           <p>
-            <strong>Hamburg-Altona, Dienstagmorgen.</strong> Draußen Nieselregen, drinnen flackern leuchtende Kursbewegungen über sechs Monitore. Jonas M. sitzt entspannt vor seiner Trading-Umgebung. „Ich analysiere hier nichts mehr selbst", sagt er mit einem leichten Grinsen. „Das übernimmt längst Bitloon."
+            <strong>Hamburg-Altona, Dienstagmorgen.</strong> Draußen Nieselregen, drinnen flackern leuchtende Kursbewegungen über sechs Monitore. Jonas M. sitzt entspannt vor seiner Trading-Umgebung. „Ich analysiere hier nichts mehr selbst", sagt er mit einem leichten Grinsen. „Das übernimmt längst TradeFlare."
           </p>
           
           <p>
@@ -121,15 +121,15 @@ const Artikel = () => {
           </p>
 
           <p>
-            Die Idee zu Bitloon war geboren.
+            Die Idee zu TradeFlare war geboren.
           </p>
 
           <Separator className="my-10" />
 
-          <h2>Der Bot: Bitloon</h2>
+          <h2>Der Bot: TradeFlare</h2>
           
           <p>
-            Bitloon ist ein autonomer Trading-Bot, speziell für den hochvolatilen Kryptomarkt entwickelt. Anders als Signal-Dienste oder halbautomatische Tools handelt Bitloon vollständig selbstständig – ohne menschliche Bestätigung oder manuelle Eingriffe.
+            TradeFlare ist ein autonomer Trading-Bot, speziell für den hochvolatilen Kryptomarkt entwickelt. Anders als Signal-Dienste oder halbautomatische Tools handelt TradeFlare vollständig selbstständig – ohne menschliche Bestätigung oder manuelle Eingriffe.
           </p>
 
           <p>
@@ -153,11 +153,11 @@ const Artikel = () => {
           <h2>Der Praxistest: 200 € Start – 543 € Ergebnis</h2>
           
           <p>
-            Wir wollten es wissen: Funktioniert Bitloon wirklich? Jonas richtet gemeinsam mit uns ein Testkonto bei einem regulierten Krypto-Broker ein.
+            Wir wollten es wissen: Funktioniert TradeFlare wirklich? Jonas richtet gemeinsam mit uns ein Testkonto bei einem regulierten Krypto-Broker ein.
           </p>
 
           <p>
-            Bitloon wurde aktiviert, im konservativen Modus (geringes Risiko, harte Stop-Loss-Grenzen). Überwachungszeitraum: 28 Stunden – keine manuellen Eingriffe, keine Anpassungen. Das Ergebnis: Aus einem Startkapital von 200 Euro wurden 543 Euro. Bitloon führte über 60 Einzel-Trades aus, mit einer hohen Trefferquote und kaum Drawdown.
+            TradeFlare wurde aktiviert, im konservativen Modus (geringes Risiko, harte Stop-Loss-Grenzen). Überwachungszeitraum: 28 Stunden – keine manuellen Eingriffe, keine Anpassungen. Das Ergebnis: Aus einem Startkapital von 200 Euro wurden 543 Euro. TradeFlare führte über 60 Einzel-Trades aus, mit einer hohen Trefferquote und kaum Drawdown.
           </p>
 
           <p>
@@ -169,7 +169,7 @@ const Artikel = () => {
           <h2>Kein Bauchgefühl. Kein Chart-Gefluche. Nur Wahrscheinlichkeiten.</h2>
           
           <p>
-            Jonas betont: Bitloon ersetzt nicht den Verstand – aber er ersetzt die Emotion. Wo viele Hobby-Traders bei jedem Dip nervös werden, bleibt Bitloon stoisch. Reagiert nur auf Daten. Und genau das scheint den Unterschied zu machen.
+            Jonas betont: TradeFlare ersetzt nicht den Verstand – aber er ersetzt die Emotion. Wo viele Hobby-Traders bei jedem Dip nervös werden, bleibt TradeFlare stoisch. Reagiert nur auf Daten. Und genau das scheint den Unterschied zu machen.
           </p>
 
           <p>
@@ -181,11 +181,11 @@ const Artikel = () => {
           <h2>Die stille Community dahinter</h2>
           
           <p>
-            Inzwischen setzen über <strong>20.000 Nutzer weltweit</strong> Bitloon ein – mit Einsätzen zwischen 100 und 10.000 Euro. Viele berichten von konstanten Ergebnissen, einem besseren Risikogefühl und – ganz wichtig – <strong>mehr Freizeit</strong>.
+            Inzwischen setzen über <strong>20.000 Nutzer weltweit</strong> TradeFlare ein – mit Einsätzen zwischen 100 und 10.000 Euro. Viele berichten von konstanten Ergebnissen, einem besseren Risikogefühl und – ganz wichtig – <strong>mehr Freizeit</strong>.
           </p>
           
           <p>
-            Denn Bitloon läuft <strong>24/7</strong>. Ohne Pause. Ohne „mal kurz schauen". Und genau das macht ihn für viele zur echten Alternative im Kryptomarkt.
+            Denn TradeFlare läuft <strong>24/7</strong>. Ohne Pause. Ohne „mal kurz schauen". Und genau das macht ihn für viele zur echten Alternative im Kryptomarkt.
           </p>
 
           <Separator className="my-10" />
@@ -200,7 +200,7 @@ const Artikel = () => {
                 Verdiene bis zu 100.000€ pro Monat mit Krypto-Trading
               </h3>
                 <p className="text-muted-foreground max-w-sm">
-                  Schließen Sie sich über 15.000 erfolgreichen Tradern an, die bereits von Bitloon profitieren.
+                  Schließen Sie sich über 15.000 erfolgreichen Tradern an, die bereits von TradeFlare profitieren.
                 </p>
                 
                 {/* Trust Badges - Einheitlich & Dezent */}
