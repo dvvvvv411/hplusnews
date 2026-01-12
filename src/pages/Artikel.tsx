@@ -1,15 +1,13 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
-import { Clock, Share2, Bookmark, Volume2, TrendingUp, ExternalLink } from "lucide-react";
+import { Clock, Share2, Bookmark, Volume2, ExternalLink } from "lucide-react";
 import NewsHeader from "@/components/news/NewsHeader";
 import NewsFooter from "@/components/news/NewsFooter";
 import RelatedArticles from "@/components/news/RelatedArticles";
 import authorImage from "@/assets/author-felix-stippler.jpg";
 import heroImage from "@/assets/bitloon-trading-hero.jpg";
-import jonasImage from "@/assets/jonas-trading-setup.jpg";
 
 const Artikel = () => {
   return (
@@ -62,6 +60,10 @@ const Artikel = () => {
               <Clock className="w-4 h-4" />
               8 Min. Lesezeit
             </span>
+            <span className="flex items-center gap-1 opacity-50">
+              <Volume2 className="w-4 h-4" />
+              Audio nicht verfügbar
+            </span>
           </div>
           
           <div className="flex items-center gap-2 sm:ml-auto">
@@ -74,17 +76,6 @@ const Artikel = () => {
             </Button>
           </div>
         </div>
-
-        {/* Audio Player Placeholder */}
-        <Card className="mb-8 bg-muted/50">
-          <CardContent className="p-4 flex items-center gap-4">
-            <Button variant="secondary" size="sm" disabled className="opacity-50">
-              <Volume2 className="w-4 h-4 mr-2" />
-              Artikel anhören
-            </Button>
-            <span className="text-sm text-muted-foreground">Audiofunktion nicht verfügbar</span>
-          </CardContent>
-        </Card>
 
         {/* Hero Image */}
         <figure className="mb-10">
@@ -119,34 +110,12 @@ const Artikel = () => {
           </p>
           
           <p>
-            Was ihn faszinierte: die Unberechenbarkeit menschlichen Verhaltens – und die Vorhersagbarkeit von Mustern dahinter.
+            Was ihn faszinierte: die Unberechenbarkeit menschlichen Verhaltens – und die Vorhersagbarkeit von Mustern dahinter. <em>„Irgendwann wurde mir klar, dass ich nicht selbst besser werden musste – ich musste einen bauen, der automatisch besser handelt als ich"</em>, erinnert sich Jonas.
           </p>
-
-          {/* Quote Box */}
-          <Card className="my-10 border-l-4 border-accent bg-muted/30">
-            <CardContent className="p-6">
-              <blockquote className="text-xl md:text-2xl font-semibold italic">
-                „Irgendwann wurde mir klar, dass ich nicht selbst besser werden musste – ich musste einen bauen, der automatisch besser handelt als ich."
-              </blockquote>
-              <cite className="text-muted-foreground mt-4 block">– Jonas M., Bitloon-Entwickler</cite>
-            </CardContent>
-          </Card>
 
           <p>
             Die Idee zu Bitloon war geboren.
           </p>
-
-          {/* Image of Jonas */}
-          <figure className="my-10">
-            <img
-              src={jonasImage}
-              alt="Jonas M. vor seinem Trading-Setup"
-              className="w-full rounded-lg shadow-lg"
-            />
-            <figcaption className="text-sm text-muted-foreground mt-3 italic">
-              Jonas M. in seinem Home-Office in Hamburg-Altona.
-            </figcaption>
-          </figure>
 
           <Separator className="my-10" />
 
@@ -156,37 +125,17 @@ const Artikel = () => {
             Bitloon ist ein autonomer Trading-Bot, speziell für den hochvolatilen Kryptomarkt entwickelt. Anders als Signal-Dienste oder halbautomatische Tools handelt Bitloon vollständig selbstständig – ohne menschliche Bestätigung oder manuelle Eingriffe.
           </p>
 
-          {/* Feature Box */}
-          <Card className="my-10 bg-primary text-primary-foreground">
-            <CardContent className="p-6">
-              <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
-                <TrendingUp className="w-5 h-5" />
-                Was Bitloon auswertet:
-              </h3>
-              <ul className="space-y-3 text-lg">
-                <li className="flex items-start gap-2">
-                  <span className="text-accent font-bold">•</span>
-                  Kursbewegungen in Echtzeit auf Plattformen wie Binance, Coinbase, Kraken
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-accent font-bold">•</span>
-                  Wallet-Aktivitäten großer Marktteilnehmer (sog. „Whales") direkt aus der Blockchain
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-accent font-bold">•</span>
-                  Marktstimmungen aus Krypto-Twitter, Telegram-Gruppen und Newsfeeds
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-accent font-bold">•</span>
-                  On-Chain-Daten: Liquidität, Volumen, Transaktionshäufungen
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-accent font-bold">•</span>
-                  Korrelationen und Volatilitätszonen zwischen BTC, ETH, SOL, uvm.
-                </li>
-              </ul>
-            </CardContent>
-          </Card>
+          <p>
+            Das System wertet kontinuierlich verschiedene Datenquellen aus:
+          </p>
+          
+          <ul className="list-disc pl-6 space-y-2 my-6">
+            <li>Kursbewegungen in Echtzeit auf Plattformen wie Binance, Coinbase, Kraken</li>
+            <li>Wallet-Aktivitäten großer Marktteilnehmer (sog. „Whales") direkt aus der Blockchain</li>
+            <li>Marktstimmungen aus Krypto-Twitter, Telegram-Gruppen und Newsfeeds</li>
+            <li>On-Chain-Daten: Liquidität, Volumen, Transaktionshäufungen</li>
+            <li>Korrelationen und Volatilitätszonen zwischen BTC, ETH, SOL, uvm.</li>
+          </ul>
           
           <p>
             „Der Bot sucht nicht nach Trends – er rechnet Wahrscheinlichkeiten. Und handelt dann schneller als jeder Mensch reagieren könnte", erklärt Jonas.
@@ -200,33 +149,13 @@ const Artikel = () => {
             Wir wollten es wissen: Funktioniert Bitloon wirklich? Jonas richtet gemeinsam mit uns ein Testkonto bei einem regulierten Krypto-Broker ein.
           </p>
 
-          {/* Result Box */}
-          <Card className="my-10 border-4 border-accent bg-accent/10">
-            <CardContent className="p-8 text-center">
-              <p className="text-muted-foreground mb-2">Startkapital</p>
-              <p className="text-4xl md:text-5xl font-black">200 €</p>
-              <div className="text-6xl my-4">→</div>
-              <p className="text-muted-foreground mb-2">Ergebnis nach 28 Stunden</p>
-              <p className="text-5xl md:text-6xl font-black text-accent">543 €</p>
-              <p className="mt-4 text-lg text-muted-foreground">
-                Über 60 Einzel-Trades • Hohe Trefferquote • Kaum Drawdown
-              </p>
-            </CardContent>
-          </Card>
-          
           <p>
-            Bitloon wurde aktiviert, im konservativen Modus (geringes Risiko, harte Stop-Loss-Grenzen). Überwachungszeitraum: 28 Stunden – keine manuellen Eingriffe, keine Anpassungen.
+            Bitloon wurde aktiviert, im konservativen Modus (geringes Risiko, harte Stop-Loss-Grenzen). Überwachungszeitraum: 28 Stunden – keine manuellen Eingriffe, keine Anpassungen. Das Ergebnis: Aus einem Startkapital von 200 Euro wurden 543 Euro. Bitloon führte über 60 Einzel-Trades aus, mit einer hohen Trefferquote und kaum Drawdown.
           </p>
 
-          {/* Quote Box 2 */}
-          <Card className="my-10 border-l-4 border-accent bg-muted/30">
-            <CardContent className="p-6">
-              <blockquote className="text-xl md:text-2xl font-semibold italic">
-                „Das System ist nicht spektakulär. Aber es ist strukturiert. Und es macht keine emotionalen Fehler."
-              </blockquote>
-              <cite className="text-muted-foreground mt-4 block">– Jonas M.</cite>
-            </CardContent>
-          </Card>
+          <p>
+            <em>„Das System ist nicht spektakulär. Aber es ist strukturiert. Und es macht keine emotionalen Fehler"</em>, kommentiert Jonas das Ergebnis.
+          </p>
 
           <Separator className="my-10" />
 
@@ -236,15 +165,9 @@ const Artikel = () => {
             Jonas betont: Bitloon ersetzt nicht den Verstand – aber er ersetzt die Emotion. Wo viele Hobby-Traders bei jedem Dip nervös werden, bleibt Bitloon stoisch. Reagiert nur auf Daten. Und genau das scheint den Unterschied zu machen.
           </p>
 
-          {/* Quote Box 3 */}
-          <Card className="my-10 border-l-4 border-accent bg-muted/30">
-            <CardContent className="p-6">
-              <blockquote className="text-xl md:text-2xl font-semibold italic">
-                „Ich verspreche niemandem Reichtum. Aber ich zeige, dass es eine Alternative gibt zu Panik, YouTube-Gurus und Chart-Roulette."
-              </blockquote>
-              <cite className="text-muted-foreground mt-4 block">– Jonas M.</cite>
-            </CardContent>
-          </Card>
+          <p>
+            <em>„Ich verspreche niemandem Reichtum. Aber ich zeige, dass es eine Alternative gibt zu Panik, YouTube-Gurus und Chart-Roulette"</em>, sagt Jonas.
+          </p>
 
           <Separator className="my-10" />
 
@@ -260,39 +183,25 @@ const Artikel = () => {
 
           <Separator className="my-10" />
 
-          {/* CTA Box */}
-          <Card className="my-10 bg-gradient-to-br from-accent to-accent/80 text-accent-foreground overflow-hidden">
-            <CardContent className="p-8">
-              <h2 className="text-3xl md:text-4xl font-black mb-4">Interesse?</h2>
-              
-              <p className="text-lg mb-6 opacity-90">
-                Bitloon ist aktuell nur limitiert verfügbar. Wer sich rechtzeitig informiert, kann eine Lizenz erwerben, den Bot selbst einrichten und auf dem eigenen Börsenkonto laufen lassen – komplett eigenständig, mit vollem Kapitalzugriff.
-              </p>
-              
-              <Card className="bg-background/10 border-0 mb-6">
-                <CardContent className="p-4 text-center">
-                  <p className="font-bold text-lg">Exklusiv für unsere Leser:</p>
-                  <p className="text-2xl md:text-3xl font-black mt-2">
-                    Mit dem Code <span className="bg-background/20 px-3 py-1 rounded">"FINANCE"</span>
-                  </p>
-                  <p className="mt-2 text-lg">erhalten Sie bei der Registrierung 50€ Startguthaben geschenkt.</p>
-                </CardContent>
-              </Card>
-              
-              <div className="text-center">
-                <Button 
-                  size="lg" 
-                  className="bg-background text-foreground hover:bg-background/90 font-bold text-lg px-8 py-6"
-                  asChild
-                >
-                  <a href="https://bitloon.io" target="_blank" rel="noopener noreferrer">
-                    <ExternalLink className="w-5 h-5 mr-2" />
-                    Mehr erfahren auf bitloon.io
-                  </a>
-                </Button>
-              </div>
-            </CardContent>
-          </Card>
+          {/* CTA Section - Dezent */}
+          <div className="my-10 p-6 border border-border rounded-lg bg-muted/20">
+            <h3 className="text-xl font-semibold mb-3">Interesse an Bitloon?</h3>
+            
+            <p className="text-muted-foreground mb-4">
+              Der Trading-Bot ist aktuell nur limitiert verfügbar. Wer sich rechtzeitig informiert, kann eine Lizenz erwerben, den Bot selbst einrichten und auf dem eigenen Börsenkonto laufen lassen – komplett eigenständig, mit vollem Kapitalzugriff.
+            </p>
+            
+            <p className="text-sm text-muted-foreground mb-4">
+              Für Leser dieses Artikels: Mit dem Code <strong>FINANCE</strong> erhalten Sie bei der Registrierung 50 € Startguthaben.
+            </p>
+            
+            <Button variant="outline" asChild>
+              <a href="https://bitloon.io" target="_blank" rel="noopener noreferrer">
+                <ExternalLink className="w-4 h-4 mr-2" />
+                Mehr erfahren auf bitloon.io
+              </a>
+            </Button>
+          </div>
 
           {/* Disclaimer */}
           <p className="text-sm text-muted-foreground italic mt-8">
