@@ -191,7 +191,7 @@ const Artikel = () => {
           <Separator className="my-10" />
 
           {/* Conversion-Optimized CTA Card */}
-          <div className="my-12 p-8 md:p-10 bg-gradient-to-br from-muted/40 to-muted/20 rounded-2xl border border-border/50">
+          <div className="my-12 p-8 md:p-10 bg-gradient-to-br from-muted/80 to-muted/40 rounded-2xl border border-border">
             <div className="grid md:grid-cols-2 gap-10">
               
               {/* Left Column - Zentriert */}
