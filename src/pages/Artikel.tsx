@@ -5,7 +5,6 @@ import { Separator } from "@/components/ui/separator";
 import { Clock, Share2, Bookmark, Volume2 } from "lucide-react";
 import NewsHeader from "@/components/news/NewsHeader";
 import NewsFooter from "@/components/news/NewsFooter";
-import RelatedArticles from "@/components/news/RelatedArticles";
 import authorImage from "@/assets/author-felix-stippler.jpg";
 import heroImage from "@/assets/jonas-trading-setup.jpg";
 
@@ -24,26 +23,26 @@ const Artikel = () => {
       <main className="container mx-auto px-4 py-8 max-w-4xl">
         {/* Breadcrumb */}
         <nav className="text-sm text-muted-foreground mb-6">
-          <span>Home</span>
+          <span>Startseite</span>
           <span className="mx-2">/</span>
-          <span>Gastronomie</span>
+          <span>Wirtschaft</span>
           <span className="mx-2">/</span>
-          <span className="text-foreground">Artikel</span>
+          <span className="text-foreground">Erfolgsgeschichte</span>
         </nav>
 
         {/* Category Badge */}
         <Badge className="bg-accent hover:bg-accent text-accent-foreground font-bold text-sm mb-4">
-          Gastronomie
+          Wirtschaft
         </Badge>
 
         {/* Headline */}
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-black leading-tight mb-4 text-balance">
-          Wie Jonas M. sein Restaurant zum Erfolg führte
+          Vom Bankangestellten zum erfolgreichen Trader: Jonas M. über ein Jahrzehnt harte Arbeit
         </h1>
 
         {/* Subheadline */}
         <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed mb-8">
-          Von der kleinen Küche zum gefragten Lokal: Die Geschichte eines Hamburger Gastronomen, der seinen Traum verwirklichte.
+          Keine Abkürzungen, kein Glück: Wie ein Hamburger durch Disziplin und jahrelange Weiterbildung seinen Weg an den Finanzmärkten fand – und warum er heute von einem Wandel im Trading spricht.
         </p>
 
         {/* Author & Meta */}
@@ -65,7 +64,7 @@ const Artikel = () => {
             <span>{formattedDate}</span>
             <span className="flex items-center gap-1">
               <Clock className="w-4 h-4" />
-              6 Min. Lesezeit
+              9 Min. Lesezeit
             </span>
             <span className="flex items-center gap-1 opacity-50">
               <Volume2 className="w-4 h-4" />
@@ -88,103 +87,96 @@ const Artikel = () => {
         <figure className="mb-10">
           <img
             src={heroImage}
-            alt="Jonas M. in seinem Restaurant"
+            alt="Jonas M. an seinem Arbeitsplatz"
             className="w-full rounded-lg shadow-lg"
           />
           <figcaption className="text-sm text-muted-foreground mt-3 italic">
-            Jonas M. in seinem Restaurant in Hamburg-Altona.
+            Jonas M. an seinem Arbeitsplatz in Hamburg. Nach über zehn Jahren im Trading hat er gelernt, dass Erfolg Zeit braucht.
           </figcaption>
         </figure>
 
         {/* Article Content */}
         <article className="article-content">
-          <h2>Von der Leidenschaft zum eigenen Restaurant</h2>
+          <h2>Der Weg eines Traders – keine Abkürzungen</h2>
           
           <p>
-            <strong>Hamburg-Altona, Dienstagmorgen.</strong> Der Duft von frisch gebackenem Brot zieht durch die Küche. Jonas M. steht zwischen Töpfen und Pfannen, während sein Team die Vorbereitungen für den Mittagsservice trifft. „Das hier ist mein Traum", sagt er mit einem zufriedenen Lächeln. „Jeden Tag aufs Neue."
+            <strong>Hamburg-Eppendorf, 7 Uhr morgens.</strong> Während die meisten Menschen noch schlafen oder sich müde den ersten Kaffee einschenken, sitzt Jonas M. (42) bereits seit einer Stunde vor seinen Bildschirmen. Kein hektisches Klicken, keine nervösen Blicke – nur konzentrierte Ruhe. Was wie ein gewöhnlicher Arbeitstag aussieht, ist das Ergebnis von mehr als einem Jahrzehnt harter Arbeit, unzähliger Rückschläge und einer Lernkurve, die steiler war als jeder Chart.
           </p>
           
           <p>
-            Was heute wie ein etabliertes Lokal aussieht, war vor fünf Jahren nur eine vage Idee in seinem Kopf. Der Weg dorthin war alles andere als einfach – aber genau das macht die Geschichte so authentisch.
-          </p>
-
-          <Separator className="my-10" />
-
-          <h2>Vom Angestellten zum Gastronomen</h2>
-          
-          <p>
-            Bevor Jonas sein eigenes Restaurant eröffnete, arbeitete er jahrelang als Koch in verschiedenen Küchen der Stadt. Lange Schichten, wenig Anerkennung, noch weniger kreative Freiheit. „Irgendwann wusste ich: Wenn ich wirklich kochen will, wie ich es mir vorstelle, muss ich es selbst machen", erinnert er sich.
-          </p>
-          
-          <p>
-            Mit 32 Jahren wagte er den Schritt. Kündigte seinen sicheren Job, nahm einen Kredit auf und mietete ein kleines Ladenlokal in Altona. <em>„Meine Familie hielt mich anfangs für verrückt. Aber sie haben mich trotzdem unterstützt."</em>
+            „Das hier ist das Resultat von zwölf Jahren", sagt Jonas, ohne den Blick von den Monitoren abzuwenden. „Nicht von zwölf Monaten, nicht von einem Kurs am Wochenende. Zwölf Jahre echtes Lernen, echte Fehler, echte Entwicklung."
           </p>
 
           <Separator className="my-10" />
 
-          <h2>Die Anfänge – Klein aber fein</h2>
+          <h2>Die Anfänge: Ein langer Weg mit vielen Umwegen</h2>
           
           <p>
-            Das erste Jahr war hart. 40 Quadratmeter, 20 Sitzplätze, ein winziges Budget. Jonas war Koch, Kellner und Buchhalter in einer Person. Die Tage begannen um 6 Uhr morgens auf dem Großmarkt und endeten oft nach Mitternacht.
-          </p>
-
-          <p>
-            „Ich habe in den ersten Monaten praktisch nichts verdient. Manchmal habe ich mich gefragt, ob ich das durchhalten kann", gibt Jonas ehrlich zu. Doch aufgeben kam für ihn nicht in Frage.
+            Vor zwölf Jahren war Jonas noch Angestellter bei einer großen deutschen Bank. Ein sicherer Job, gutes Gehalt, klare Karriereleiter. Doch etwas fehlte. „Ich habe jeden Tag mit Geld gearbeitet, aber nie wirklich verstanden, wie die Märkte funktionieren", erinnert er sich. In seiner Freizeit begann er, Bücher über Börsenpsychologie und technische Analyse zu lesen. Abends nach der Arbeit, am Wochenende, im Urlaub.
           </p>
           
           <p>
-            Stattdessen konzentrierte er sich auf das, was er am besten konnte: ehrliche, handwerklich perfekte Küche mit regionalen Zutaten.
+            „Die ersten Jahre waren ernüchternd", gibt Jonas offen zu. „Ich dachte, ich könnte das nebenbei lernen. Aber die Märkte sind gnadenlos ehrlich. Sie zeigen dir sehr schnell, was du noch nicht weißt." Seine ersten Trades? Mehr Verluste als Gewinne. Sein erstes Jahr als aktiver Trader? Ein deutliches Minus.
           </p>
 
           <Separator className="my-10" />
 
-          <h2>Qualität statt Quantität</h2>
+          <h2>Jahre des Lernens: Demut als wichtigste Lektion</h2>
           
           <p>
-            Jonas' Philosophie war von Anfang an klar: Wenige Gerichte, aber diese dafür perfekt. Keine Fertigprodukte, keine Kompromisse bei den Zutaten. Er arbeitet bis heute eng mit lokalen Bauern und Lieferanten zusammen.
+            Was Jonas von vielen unterscheidet, die an den Märkten scheitern: Er hat nicht aufgegeben. Stattdessen hat er jeden Fehler dokumentiert, analysiert und daraus gelernt. Fünf Jahre lang. <em>„Das ist der Teil, den niemand sehen will"</em>, sagt er. <em>„Die endlosen Stunden des Studierens, die schlaflosen Nächte, die Zweifel. Erfolg im Trading sieht von außen glamourös aus, aber der Weg dorthin ist alles andere als das."</em>
+          </p>
+          
+          <p>
+            Er besuchte Seminare, tauschte sich mit erfahrenen Tradern aus, und – vielleicht am wichtigsten – lernte, seine Emotionen zu kontrollieren. „Die größte Hürde bin ich selbst", erklärt Jonas. „Gier, Angst, Ungeduld – das sind die wahren Gegner. Der Markt macht einfach das, was er macht."
+          </p>
+
+          <Separator className="my-10" />
+
+          <h2>Der Wandel: Neue Zeiten an den Finanzmärkten</h2>
+          
+          <p>
+            In den letzten Jahren hat Jonas einen fundamentalen Wandel beobachtet. „Die Art, wie wir heute auf Märkte zugreifen können, hat sich komplett verändert", erklärt er. Neue Technologien, bessere Analysewerkzeuge, schnellerer Informationsfluss. „Was früher institutionellen Investoren vorbehalten war, ist heute für jeden zugänglich."
+          </p>
+
+          <p>
+            Jonas spricht von einer „stillen Revolution" im Trading. Nicht laut, nicht marktschreierisch, aber fundamental. „Die Werkzeuge werden immer besser. Die Datenanalyse, die Mustererkennung, die Geschwindigkeit." Aber – und hier wird er ernst – „die Werkzeuge allein machen noch keinen erfolgreichen Trader. Das ist wie mit einem Chirurgen: Das beste Skalpell nützt nichts ohne jahrelange Ausbildung."
+          </p>
+
+          <Separator className="my-10" />
+
+          <h2>Disziplin als Fundament</h2>
+          
+          <p>
+            Heute beginnt Jonas' Tag um sechs Uhr. Erst Sport, dann Frühstück mit der Familie, dann die Vorbereitung auf den Handelstag. Er analysiert Märkte, prüft seine Positionen, liest Wirtschaftsnachrichten. Wenn die europäischen Börsen öffnen, ist er vorbereitet.
+          </p>
+
+          <p>
+            „Mein wichtigstes Werkzeug ist nicht mein Computer", sagt er mit einem Lächeln. „Es ist meine Routine. Disziplin schlägt Talent. Jeden Tag." Er handelt nach strengen Regeln, die er über Jahre entwickelt hat. Maximales Risiko pro Trade, klare Ausstiegspunkte, keine impulsiven Entscheidungen.
+          </p>
+
+          <p>
+            Die Statistik kennt er genau: Etwa 80 bis 90 Prozent aller privaten Trader verlieren langfristig Geld. Jonas hat großen Respekt vor diesen Zahlen. „Ich vergesse nie, dass die Märkte mich jederzeit demütigen können. Diese Haltung hält mich am Boden – und im Spiel."
+          </p>
+
+          <Separator className="my-10" />
+
+          <h2>Was Jonas anderen mit auf den Weg gibt</h2>
+          
+          <p>
+            Auf die Frage, was er Menschen raten würde, die sich für Trading interessieren, antwortet Jonas ohne zu zögern:
           </p>
 
           <ul className="list-disc pl-6 space-y-2 my-6">
-            <li>Gemüse vom Wochenmarkt in Altona</li>
-            <li>Fleisch von einem Bio-Hof aus dem Hamburger Umland</li>
-            <li>Fisch direkt vom Hamburger Fischmarkt</li>
-            <li>Brot aus der Backstube eines befreundeten Bäckermeisters</li>
+            <li>„Erwarte nichts schnell. Plane in Jahren, nicht in Monaten."</li>
+            <li>„Investiere zuerst in deine Bildung, nicht in den Markt."</li>
+            <li>„Riskiere niemals Geld, das du zum Leben brauchst."</li>
+            <li>„Lerne, Verluste zu akzeptieren – sie gehören dazu."</li>
+            <li>„Sei misstrauisch gegenüber jedem, der schnellen Reichtum verspricht."</li>
           </ul>
           
           <p>
-            „Die Leute merken den Unterschied. Vielleicht nicht beim ersten Bissen, aber spätestens beim zweiten Besuch", erklärt Jonas seine Überzeugung.
-          </p>
-
-          <Separator className="my-10" />
-
-          <h2>Der Durchbruch</h2>
-          
-          <p>
-            Nach etwa anderthalb Jahren kam der Wendepunkt. Ein lokaler Food-Blogger schrieb über das kleine Restaurant, dann folgten Empfehlungen in mehreren Hamburg-Magazinen. Plötzlich standen die Leute Schlange.
-          </p>
-
-          <p>
-            Jonas konnte expandieren, stellte seine ersten Mitarbeiter ein und vergrößerte das Lokal. Heute hat das Restaurant 60 Plätze und ein festes Team von acht Leuten. Die Reservierungsliste ist oft Wochen im Voraus ausgebucht.
-          </p>
-
-          <p>
-            <em>„Das Wichtigste ist, dass wir unsere Werte nicht verloren haben. Wir kochen immer noch genauso wie am ersten Tag – nur eben für mehr Gäste"</em>, betont Jonas.
-          </p>
-
-          <Separator className="my-10" />
-
-          <h2>Was Jonas anderen Gründern rät</h2>
-          
-          <p>
-            Auf die Frage, welche Tipps er Gründern in der Gastronomie geben würde, überlegt Jonas kurz:
-          </p>
-          
-          <p>
-            „Erstens: Unterschätze niemals die Bürokratie. Genehmigungen, Hygiene-Vorschriften, Steuern – das kostet alles Zeit und Nerven. Zweitens: Hab Geduld. Erfolg kommt nicht über Nacht. Und drittens: Bleib bei dem, was du kannst. Kopiere niemanden, sei authentisch."
-          </p>
-
-          <p>
-            Dann fügt er hinzu: „Und ganz wichtig – umgib dich mit Menschen, die an dich glauben. Ohne meine Familie und mein Team wäre ich nicht hier."
+            Besonders der letzte Punkt ist ihm wichtig. „Das Internet ist voll von Menschen, die das schnelle Geld versprechen. Die Realität ist: Konstanter Erfolg an den Märkten erfordert Jahre der Vorbereitung, eiserne Disziplin und die Bereitschaft, immer weiter zu lernen."
           </p>
 
           <Separator className="my-10" />
@@ -192,15 +184,21 @@ const Artikel = () => {
           <h2>Ein Blick in die Zukunft</h2>
           
           <p>
-            Für die Zukunft hat Jonas bescheidene Pläne. Keine Filialen, keine Franchise-Ambitionen. „Ich möchte einfach weiter gutes Essen machen. Vielleicht irgendwann ein kleines Kochbuch schreiben oder Workshops geben. Aber im Kern bleibt alles beim Alten."
+            Und wie geht es weiter für Jonas? „Ich möchte irgendwann mein Wissen weitergeben", sagt er nachdenklich. „Nicht um Leute reich zu machen – das kann ich nicht versprechen. Aber um zu zeigen, dass es einen seriösen Weg gibt. Einen, der Zeit braucht, aber nachhaltig ist."
           </p>
           
           <p>
-            Was er sich wünscht? „Dass die Leute weiterhin gerne zu uns kommen. Dass sie sich bei uns wohlfühlen. Das ist eigentlich alles, was zählt."
+            Er plant, in den kommenden Jahren mehr Zeit mit Mentoring zu verbringen. Nicht für die Massen, sondern für einzelne Menschen, die bereit sind, den langen Weg zu gehen. „Ich suche keine Schüler, die schnell reich werden wollen", betont er. „Ich suche Menschen, die bereit sind, hart zu arbeiten. So wie ich es tun musste."
           </p>
 
           <p>
-            Jonas M. hat bewiesen, dass man mit Leidenschaft, harter Arbeit und der richtigen Einstellung seinen Traum verwirklichen kann. Seine Geschichte ist ein Beispiel dafür, dass Erfolg nicht immer spektakulär sein muss – manchmal reicht es, einfach richtig gut in dem zu sein, was man liebt.
+            Als wir uns verabschieden, ist es kurz vor Mittag. Die Märkte laufen, aber Jonas wirkt entspannt. „Das ist vielleicht die größte Veränderung", sagt er zum Abschied. „Früher war ich nervös, hektisch, süchtig nach jedem Tick. Heute weiß ich: Die Märkte sind morgen auch noch da. Und übermorgen. Geduld ist die beste Strategie."
+          </p>
+
+          <Separator className="my-10" />
+
+          <p className="text-sm text-muted-foreground italic">
+            Hinweis: Dieser Artikel stellt keine Anlageberatung dar. Trading birgt erhebliche Risiken, und vergangene Erfolge sind keine Garantie für zukünftige Ergebnisse. Jeder sollte sich vor Investitionsentscheidungen unabhängig beraten lassen.
           </p>
         </article>
 
