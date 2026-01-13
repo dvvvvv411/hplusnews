@@ -2,13 +2,12 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Separator } from "@/components/ui/separator";
-import { Clock, Share2, Bookmark, Volume2, Check, ArrowRight } from "lucide-react";
+import { Clock, Share2, Bookmark, Volume2 } from "lucide-react";
 import NewsHeader from "@/components/news/NewsHeader";
 import NewsFooter from "@/components/news/NewsFooter";
 import RelatedArticles from "@/components/news/RelatedArticles";
 import authorImage from "@/assets/author-felix-stippler.jpg";
-import heroImage from "@/assets/bitloon-trading-hero.jpg";
-import tradeFlareLogo from "@/assets/tradeflare-logo.png";
+import heroImage from "@/assets/jonas-trading-setup.jpg";
 
 const Artikel = () => {
   const today = new Date();
@@ -27,24 +26,24 @@ const Artikel = () => {
         <nav className="text-sm text-muted-foreground mb-6">
           <span>Home</span>
           <span className="mx-2">/</span>
-          <span>Krypto</span>
+          <span>Gastronomie</span>
           <span className="mx-2">/</span>
           <span className="text-foreground">Artikel</span>
         </nav>
 
         {/* Category Badge */}
         <Badge className="bg-accent hover:bg-accent text-accent-foreground font-bold text-sm mb-4">
-          Krypto
+          Gastronomie
         </Badge>
 
         {/* Headline */}
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-black leading-tight mb-4 text-balance">
-          So verdiente Jonas M. mit KI Millionen an der Börse
+          Wie Jonas M. sein Restaurant zum Erfolg führte
         </h1>
 
         {/* Subheadline */}
         <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed mb-8">
-          Der autonome Trading-Bot TradeFlare revolutioniert das Krypto-Trading durch vollautomatische Handelsentscheidungen.
+          Von der kleinen Küche zum gefragten Lokal: Die Geschichte eines Hamburger Gastronomen, der seinen Traum verwirklichte.
         </p>
 
         {/* Author & Meta */}
@@ -66,7 +65,7 @@ const Artikel = () => {
             <span>{formattedDate}</span>
             <span className="flex items-center gap-1">
               <Clock className="w-4 h-4" />
-              8 Min. Lesezeit
+              6 Min. Lesezeit
             </span>
             <span className="flex items-center gap-1 opacity-50">
               <Volume2 className="w-4 h-4" />
@@ -89,183 +88,120 @@ const Artikel = () => {
         <figure className="mb-10">
           <img
             src={heroImage}
-            alt="TradeFlare Trading Setup"
+            alt="Jonas M. in seinem Restaurant"
             className="w-full rounded-lg shadow-lg"
           />
           <figcaption className="text-sm text-muted-foreground mt-3 italic">
-            TradeFlare: Autonomer Trading-Bot für vollautomatisierten Krypto-Handel.
+            Jonas M. in seinem Restaurant in Hamburg-Altona.
           </figcaption>
         </figure>
 
         {/* Article Content */}
         <article className="article-content">
-          <h2>Rechnen statt Raten: Der neue Weg, im Krypto-Markt Geld zu verdienen</h2>
+          <h2>Von der Leidenschaft zum eigenen Restaurant</h2>
           
           <p>
-            <strong>Hamburg-Altona, Dienstagmorgen.</strong> Draußen Nieselregen, drinnen flackern leuchtende Kursbewegungen über sechs Monitore. Jonas M. sitzt entspannt vor seiner Trading-Umgebung. „Ich analysiere hier nichts mehr selbst", sagt er mit einem leichten Grinsen. „Das übernimmt längst TradeFlare."
+            <strong>Hamburg-Altona, Dienstagmorgen.</strong> Der Duft von frisch gebackenem Brot zieht durch die Küche. Jonas M. steht zwischen Töpfen und Pfannen, während sein Team die Vorbereitungen für den Mittagsservice trifft. „Das hier ist mein Traum", sagt er mit einem zufriedenen Lächeln. „Jeden Tag aufs Neue."
           </p>
           
           <p>
-            Was klingt wie Zukunftsmusik, ist für Jonas Alltag: Ein vollautomatischer Krypto-Trading-Bot, der eigenständig handelt, auswertet und Gewinne realisiert – rund um die Uhr.
+            Was heute wie ein etabliertes Lokal aussieht, war vor fünf Jahren nur eine vage Idee in seinem Kopf. Der Weg dorthin war alles andere als einfach – aber genau das macht die Geschichte so authentisch.
           </p>
 
           <Separator className="my-10" />
 
-          <h2>Vom Excel-Angestellten zum Architekten eines autonomen Systems</h2>
+          <h2>Vom Angestellten zum Gastronomen</h2>
           
           <p>
-            Vor drei Jahren noch arbeitete Jonas in einem Großkonzern – lange Meetings, starre Abläufe. In seiner Freizeit begann er, sich intensiv mit dem Kryptomarkt und maschinellem Lernen zu beschäftigen.
+            Bevor Jonas sein eigenes Restaurant eröffnete, arbeitete er jahrelang als Koch in verschiedenen Küchen der Stadt. Lange Schichten, wenig Anerkennung, noch weniger kreative Freiheit. „Irgendwann wusste ich: Wenn ich wirklich kochen will, wie ich es mir vorstelle, muss ich es selbst machen", erinnert er sich.
           </p>
           
           <p>
-            Was ihn faszinierte: die Unberechenbarkeit menschlichen Verhaltens – und die Vorhersagbarkeit von Mustern dahinter. <em>„Irgendwann wurde mir klar, dass ich nicht selbst besser werden musste – ich musste einen bauen, der automatisch besser handelt als ich"</em>, erinnert sich Jonas.
-          </p>
-
-          <p>
-            Die Idee zu TradeFlare war geboren.
+            Mit 32 Jahren wagte er den Schritt. Kündigte seinen sicheren Job, nahm einen Kredit auf und mietete ein kleines Ladenlokal in Altona. <em>„Meine Familie hielt mich anfangs für verrückt. Aber sie haben mich trotzdem unterstützt."</em>
           </p>
 
           <Separator className="my-10" />
 
-          <h2>Der Bot: TradeFlare</h2>
+          <h2>Die Anfänge – Klein aber fein</h2>
           
           <p>
-            TradeFlare ist ein autonomer Trading-Bot, speziell für den hochvolatilen Kryptomarkt entwickelt. Anders als Signal-Dienste oder halbautomatische Tools handelt TradeFlare vollständig selbstständig – ohne menschliche Bestätigung oder manuelle Eingriffe.
+            Das erste Jahr war hart. 40 Quadratmeter, 20 Sitzplätze, ein winziges Budget. Jonas war Koch, Kellner und Buchhalter in einer Person. Die Tage begannen um 6 Uhr morgens auf dem Großmarkt und endeten oft nach Mitternacht.
           </p>
 
           <p>
-            Das System wertet kontinuierlich verschiedene Datenquellen aus:
+            „Ich habe in den ersten Monaten praktisch nichts verdient. Manchmal habe ich mich gefragt, ob ich das durchhalten kann", gibt Jonas ehrlich zu. Doch aufgeben kam für ihn nicht in Frage.
           </p>
           
+          <p>
+            Stattdessen konzentrierte er sich auf das, was er am besten konnte: ehrliche, handwerklich perfekte Küche mit regionalen Zutaten.
+          </p>
+
+          <Separator className="my-10" />
+
+          <h2>Qualität statt Quantität</h2>
+          
+          <p>
+            Jonas' Philosophie war von Anfang an klar: Wenige Gerichte, aber diese dafür perfekt. Keine Fertigprodukte, keine Kompromisse bei den Zutaten. Er arbeitet bis heute eng mit lokalen Bauern und Lieferanten zusammen.
+          </p>
+
           <ul className="list-disc pl-6 space-y-2 my-6">
-            <li>Kursbewegungen in Echtzeit auf Plattformen wie Binance, Coinbase, Kraken</li>
-            <li>Wallet-Aktivitäten großer Marktteilnehmer (sog. „Whales") direkt aus der Blockchain</li>
-            <li>Marktstimmungen aus Krypto-Twitter, Telegram-Gruppen und Newsfeeds</li>
-            <li>On-Chain-Daten: Liquidität, Volumen, Transaktionshäufungen</li>
-            <li>Korrelationen und Volatilitätszonen zwischen BTC, ETH, SOL, uvm.</li>
+            <li>Gemüse vom Wochenmarkt in Altona</li>
+            <li>Fleisch von einem Bio-Hof aus dem Hamburger Umland</li>
+            <li>Fisch direkt vom Hamburger Fischmarkt</li>
+            <li>Brot aus der Backstube eines befreundeten Bäckermeisters</li>
           </ul>
           
           <p>
-            „Der Bot sucht nicht nach Trends – er rechnet Wahrscheinlichkeiten. Und handelt dann schneller als jeder Mensch reagieren könnte", erklärt Jonas.
+            „Die Leute merken den Unterschied. Vielleicht nicht beim ersten Bissen, aber spätestens beim zweiten Besuch", erklärt Jonas seine Überzeugung.
           </p>
 
           <Separator className="my-10" />
 
-          <h2>Der Praxistest: 200 € Start – 543 € Ergebnis</h2>
+          <h2>Der Durchbruch</h2>
           
           <p>
-            Wir wollten es wissen: Funktioniert TradeFlare wirklich? Jonas richtet gemeinsam mit uns ein Testkonto bei einem regulierten Krypto-Broker ein.
+            Nach etwa anderthalb Jahren kam der Wendepunkt. Ein lokaler Food-Blogger schrieb über das kleine Restaurant, dann folgten Empfehlungen in mehreren Hamburg-Magazinen. Plötzlich standen die Leute Schlange.
           </p>
 
           <p>
-            TradeFlare wurde aktiviert, im konservativen Modus (geringes Risiko, harte Stop-Loss-Grenzen). Überwachungszeitraum: 28 Stunden – keine manuellen Eingriffe, keine Anpassungen. Das Ergebnis: Aus einem Startkapital von 200 Euro wurden 543 Euro. TradeFlare führte über 60 Einzel-Trades aus, mit einer hohen Trefferquote und kaum Drawdown.
+            Jonas konnte expandieren, stellte seine ersten Mitarbeiter ein und vergrößerte das Lokal. Heute hat das Restaurant 60 Plätze und ein festes Team von acht Leuten. Die Reservierungsliste ist oft Wochen im Voraus ausgebucht.
           </p>
 
           <p>
-            <em>„Das System ist nicht spektakulär. Aber es ist strukturiert. Und es macht keine emotionalen Fehler"</em>, kommentiert Jonas das Ergebnis.
+            <em>„Das Wichtigste ist, dass wir unsere Werte nicht verloren haben. Wir kochen immer noch genauso wie am ersten Tag – nur eben für mehr Gäste"</em>, betont Jonas.
           </p>
 
           <Separator className="my-10" />
 
-          <h2>Kein Bauchgefühl. Kein Chart-Gefluche. Nur Wahrscheinlichkeiten.</h2>
+          <h2>Was Jonas anderen Gründern rät</h2>
           
           <p>
-            Jonas betont: TradeFlare ersetzt nicht den Verstand – aber er ersetzt die Emotion. Wo viele Hobby-Traders bei jedem Dip nervös werden, bleibt TradeFlare stoisch. Reagiert nur auf Daten. Und genau das scheint den Unterschied zu machen.
+            Auf die Frage, welche Tipps er Gründern in der Gastronomie geben würde, überlegt Jonas kurz:
+          </p>
+          
+          <p>
+            „Erstens: Unterschätze niemals die Bürokratie. Genehmigungen, Hygiene-Vorschriften, Steuern – das kostet alles Zeit und Nerven. Zweitens: Hab Geduld. Erfolg kommt nicht über Nacht. Und drittens: Bleib bei dem, was du kannst. Kopiere niemanden, sei authentisch."
           </p>
 
           <p>
-            <em>„Ich verspreche niemandem Reichtum. Aber ich zeige, dass es eine Alternative gibt zu Panik, YouTube-Gurus und Chart-Roulette"</em>, sagt Jonas.
+            Dann fügt er hinzu: „Und ganz wichtig – umgib dich mit Menschen, die an dich glauben. Ohne meine Familie und mein Team wäre ich nicht hier."
           </p>
 
           <Separator className="my-10" />
 
-          <h2>Die stille Community dahinter</h2>
+          <h2>Ein Blick in die Zukunft</h2>
           
           <p>
-            Inzwischen setzen über <strong>20.000 Nutzer weltweit</strong> TradeFlare ein – mit Einsätzen zwischen 100 und 10.000 Euro. Viele berichten von konstanten Ergebnissen, einem besseren Risikogefühl und – ganz wichtig – <strong>mehr Freizeit</strong>.
+            Für die Zukunft hat Jonas bescheidene Pläne. Keine Filialen, keine Franchise-Ambitionen. „Ich möchte einfach weiter gutes Essen machen. Vielleicht irgendwann ein kleines Kochbuch schreiben oder Workshops geben. Aber im Kern bleibt alles beim Alten."
           </p>
           
           <p>
-            Denn TradeFlare läuft <strong>24/7</strong>. Ohne Pause. Ohne „mal kurz schauen". Und genau das macht ihn für viele zur echten Alternative im Kryptomarkt.
+            Was er sich wünscht? „Dass die Leute weiterhin gerne zu uns kommen. Dass sie sich bei uns wohlfühlen. Das ist eigentlich alles, was zählt."
           </p>
 
-          <Separator className="my-10" />
-
-          {/* Conversion-Optimized CTA Card */}
-          <div className="my-12 p-8 md:p-10 bg-gradient-to-br from-muted/80 to-muted/40 rounded-2xl border border-border">
-            <div className="grid md:grid-cols-2 gap-10">
-              
-              {/* Left Column - Zentriert */}
-              <div className="flex flex-col items-center text-center space-y-6">
-              <img 
-                src={tradeFlareLogo} 
-                alt="TradeFlare Logo" 
-                className="h-10 md:h-12 w-auto"
-              />
-              <h3 className="text-2xl md:text-3xl font-bold text-foreground leading-tight">
-                Verdiene bis zu 100.000€ pro Monat mit Krypto-Trading
-              </h3>
-                <p className="text-muted-foreground max-w-sm">
-                  Schließen Sie sich über 15.000 erfolgreichen Tradern an, die bereits von TradeFlare profitieren.
-                </p>
-                
-                {/* Trust Badges - Einheitlich & Dezent */}
-                <div className="flex flex-wrap justify-center gap-3 pt-2">
-                  <div className="flex items-center gap-2 px-3 py-2 rounded-lg bg-background/60 border border-border/40">
-                    <Check className="w-4 h-4 text-muted-foreground" />
-                    <span className="text-sm text-muted-foreground">15.000+ Nutzer</span>
-                  </div>
-                  <div className="flex items-center gap-2 px-3 py-2 rounded-lg bg-background/60 border border-border/40">
-                    <Check className="w-4 h-4 text-muted-foreground" />
-                    <span className="text-sm text-muted-foreground">4.8★ Bewertung</span>
-                  </div>
-                </div>
-              </div>
-              
-              {/* Right Column - Zentriert */}
-              <div className="flex flex-col items-center text-center space-y-5">
-                <Badge className="bg-primary/10 text-primary border-primary/20 px-4 py-1">
-                  Premium Service
-                </Badge>
-                
-                <div className="space-y-3 text-left">
-                  <div className="flex items-center gap-3">
-                    <Check className="w-5 h-5 text-primary flex-shrink-0" />
-                    <span className="text-foreground">Persönlicher Ansprechpartner</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Check className="w-5 h-5 text-primary flex-shrink-0" />
-                    <span className="text-foreground">24/7 Support-Hotline</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Check className="w-5 h-5 text-primary flex-shrink-0" />
-                    <span className="text-foreground">Kostenlose Finanzberatung</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Check className="w-5 h-5 text-primary flex-shrink-0" />
-                    <span className="text-foreground">Keine versteckten Gebühren</span>
-                  </div>
-                </div>
-                
-                <a href="https://tradeflare.de" target="_blank" rel="noopener noreferrer">
-                  <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground font-bold text-lg px-10 py-6 rounded-xl shadow-lg mt-2">
-                    JETZT KOSTENLOS STARTEN
-                    <ArrowRight className="ml-2 w-5 h-5" />
-                  </Button>
-                </a>
-                
-                <p className="text-xs text-muted-foreground">
-                  Kein Risiko · Jederzeit kündbar
-                </p>
-              </div>
-              
-            </div>
-            
-            {/* Risk Notice */}
-            <p className="!text-[14px] text-muted-foreground/60 mt-8 pt-4 border-t border-border/30 text-center">
-              Risikohinweis: Trading birgt Verlustrisiken. Vergangene Gewinne sind keine Garantie für zukünftige Ergebnisse.
-            </p>
-          </div>
+          <p>
+            Jonas M. hat bewiesen, dass man mit Leidenschaft, harter Arbeit und der richtigen Einstellung seinen Traum verwirklichen kann. Seine Geschichte ist ein Beispiel dafür, dass Erfolg nicht immer spektakulär sein muss – manchmal reicht es, einfach richtig gut in dem zu sein, was man liebt.
+          </p>
         </article>
 
       </main>
